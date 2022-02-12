@@ -79,11 +79,11 @@ Immediately following the header is the list of partitions, each partition struc
 ```c
 struct Partition
 {
-    ulong PartitionAbsoluteStartAddress;
-    ulong PartitionLength;
-    byte[64] PartitionName;
+    long AbsoluteStartAddress;
+    long Length;
+    byte[64] Name;
     byte IsBootable;
-    ulong OSBootProgramPartitionAddress;
+    long OSBootProgramPartitionAddress;
     int OSBootProgramLength;
 }
 ```
